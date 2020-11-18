@@ -6,7 +6,6 @@
 
 
 var playBtn = document.getElementById("go_btn");
-var deleteBtn = document.getElementById("delete_btn");
 
 go_btn.addEventListener("click",
     function() {
@@ -54,12 +53,30 @@ go_btn.addEventListener("click",
                 } else {
                     document.getElementById("is_winner").innerHTML = "HAI PERSO!";
                 }
-
+                document.getElementById("players_container").className = "show";
             }
         }
 
+
     }
-)
+);
+
+var deleteBtn = document.getElementById("delete_btn");
+deleteBtn.addEventListener("click",
+    function() {
+        document.getElementById("players_container").className = "hidden";
+
+        document.getElementById("even_odd").value = "not_work";
+        document.getElementById("number").value = "";
+        document.getElementById("human_choise").innerHTML = "";
+        document.getElementById("computer_choise").innerHTML = "";
+        document.getElementById("human_number").innerHTML = "";
+        document.getElementById("computer_number").innerHTML = "";
+        document.getElementById("numbers_result").innerHTML = "";
+        document.getElementById("choises_result").innerHTML = "";
+        document.getElementById("is_winner").innerHTML = "";
+    }
+);
 
 
 
