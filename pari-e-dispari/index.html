@@ -8,6 +8,53 @@
     </head>
     <body>
 
+        <h1>pari o dispari?</h1>
+
+        <div class="imputs_container">
+
+            <div class="even_odd_container">
+                <label for="even_odd">Pari o dispari?</label>
+                <select id="even_odd" name="even_odd">
+                    <option value="not_work" selected disabled>-</option>
+                    <option value="even">Pari</option>
+                    <option value="odd">Dispari</option>
+                </select>
+            </div>
+
+            <div class="number_container">
+                <label for="number">Scegli un numero da 1 a 5</label>
+                <input type="number" id="number" name="number" placeholder="Numero">
+            </div>
+
+            <div class="btn_container">
+                <div id="go_btn" class="btn">Gioca!</div>
+                <div id="delete_btn" class="btn">Cancella</div>
+            </div>
+        </div>
+
+        <div id="players_container">
+
+            <div class="human_player">
+                <h2>tu</h2>
+                <p id="human_choise"></p>
+                <p id="human_number"></p>
+            </div>
+
+            <div class="winner">
+                <h2>risultato</h2>
+                <p id="numbers_result"></p>
+                <p id="choises_result"></p>
+                <h3 id="is_winner"></h3>
+            </div>
+
+            <div class="computer_player">
+                <h2>computer</h2>
+                <p id="computer_choise"></p>
+                <p id="computer_number"></p>
+            </div>
+
+        </div>
+
         <script src="js/pari-dispari.js" charset="utf-8"></script>
 
     </body>
